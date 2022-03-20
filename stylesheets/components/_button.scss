@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+$color: #FFFFFF;
+$bg-color: #CCBAA6;
+
+@mixin btn-std($min-width, $height, $b-radius) {
+  min-width: $min-width;
+  border-radius: $b-radius;
+  height: $height;
+
+  @include animate;
+  @include inline-flex-center;
+
+  cursor: pointer;
+
+  padding: 0 35px;
+  background-color: $bg-color;
+  border: 1px solid $bg-color;
+
+  // стили текста кнопки
+
+  text-align: center;
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: $color;
+
+  // hover
+
+  &:hover {
+	background-color: $color;
+	border: 1px solid $color;
+	color: $bg-color;
+  }
+}
+
+// @include btn-std;
+
+.btn-std {
+  @include btn-std(170px, 40px, 4px);
+}
