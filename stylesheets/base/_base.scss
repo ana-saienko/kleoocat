@@ -14,6 +14,7 @@ html {
 // main styles for the layout
 
 body {
+
   &.lock {
     overflow: hidden;
   }
@@ -23,6 +24,8 @@ body {
   font-size: 20px;
   line-height: 24px;
   background-color: #3a332d;
+
+  overflow-x: hidden;
 }
 
 .container {

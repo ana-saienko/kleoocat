@@ -105,6 +105,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   background-color: #3a332d;
+  overflow-x: hidden;
 }
 
 body.lock {
@@ -396,6 +397,59 @@ body.lock {
   margin-left: 35px;
 }
 
+.cert {
+  background-color: #fff;
+  padding: 50px 0 92px;
+}
+
+.cert__title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 991.98px) {
+  .cert__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .cert__title {
+    font-size: 28px;
+  }
+}
+
+.cert__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+@media (max-width: 1382px) {
+  .cert__box {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cert__box {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.cert__box-item {
+  width: 250px;
+  height: 300px;
+}
+
 .btn-std {
   min-width: 170px;
   border-radius: 4px;
@@ -643,3 +697,16 @@ body._touch .menu__list > li.active .menu__sub-list {
 	 transform: rotate(-180deg);
  }
 */
+.ibg {
+  position: relative;
+}
+
+.ibg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

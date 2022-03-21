@@ -12,3 +12,4 @@ if (iconMenu) {
 		menuBody.classList.toggle('burger-active');
 	});
 }
+
