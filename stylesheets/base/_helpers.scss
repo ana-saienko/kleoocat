@@ -12,3 +12,18 @@
   position: absolute;
   width: 1px;
 }
+
+.sec-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 50px;
+
+  @media (max-width:$md2+px){
+	  font-size: 32px;
+  }
+  @media (max-width:$md4+px){
+		font-size: 28px; 
+  }
+}

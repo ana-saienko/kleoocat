@@ -43,3 +43,9 @@ $bg-color: #CCBAA6;
 .btn-std {
   @include btn-std(170px, 40px, 4px);
 }
+
+.contact__btn {
+  font-weight: 500;
+  font-size: 18px;
+  color: #333333;
+}
